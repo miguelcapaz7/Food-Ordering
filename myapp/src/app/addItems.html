@@ -1,0 +1,45 @@
+<br><br>
+<table>
+  <tr>
+    <td>&nbsp;<b>ID </b></td>
+  </tr>
+  <tr>
+    <td>&nbsp;<input type="text" [(ngModel)]="_id" /><td>
+  </tr>
+  <tr>
+    <td>&nbsp;<b>Item Name </b></td>
+  </tr>
+  <tr>
+    <td>&nbsp;<input type="text"   [(ngModel)]="_productName" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;<b>Price </b></td>
+  </tr>
+  <tr>
+    <td>&nbsp;<input type="text"   [(ngModel)]="_price" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;<input type="submit" value="Add Item" (click)="createProduct()"></td>
+  </tr>
+</table>
+{{_errorMessage}}
+<br><br>
+
+<table>
+  <tr *ngFor="let product of _productsArray">
+    <td height="20px">
+      &nbsp;<b>{{product._id}}</b>
+    </td>
+    <td>
+      {{product.productName}}
+    </td>
+    <td width="150px"></td>
+    <td>
+      ${{product.price.toFixed(2)}}
+    </td>
+    <td width="5px"></td>
+    <td>
+      <a href="/addItems" (click)="deleteProduct(product._id)">Delete</a>
+    </td>
+  </tr>
+</table>
