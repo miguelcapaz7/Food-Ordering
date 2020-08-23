@@ -1,0 +1,25 @@
+<% layout('../layouts/mainlayout.ejs') -%><br/>
+<form action="/Order/CreateOrder" method="POST">   
+    <table>
+        <tr>
+            <td>Date/Time: </td>
+            <td><input id="dateTime" name="dateTime" 
+                 value="<%= order.dateTime ? order.dateTime : '' %>" type="text" ></td>
+        </tr>
+        <tr>
+            <td>Server:</td>
+            <td><input id="server" name="server" type="text" 
+                 value=<%= order.server ? order.server : '' %> ></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input id="price" name="price" type="text" 
+                 value=<%= order.price ? order.price : '' %> ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+<%= errorMessage %><br/>

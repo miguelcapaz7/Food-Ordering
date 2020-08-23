@@ -1,0 +1,14 @@
+<% layout('../layouts/mainlayout.ejs') -%>
+<br/><br/>
+<b>Order Listing</b>
+<br/><br/>
+<a href="/Order/Create">Create Order</a><br/><br/>
+<table>
+<% for(var i=0; i < orders.length; i++) { %>
+    <tr>
+      <td><b>Date/Time:</b><%= orders[i].dateTime %></td>
+      <td><b>Server:</b> <%= orders[i].server %></td>
+      <td><b>Price:</b> <%= orders[i].price %></td>
+    </tr>
+ <% } %>
+</table>
