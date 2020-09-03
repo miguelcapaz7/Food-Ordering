@@ -16,10 +16,6 @@ The following are **required** to install:
   - [NodeJS](https://nodejs.org/en/)
   - [MongoDB](https://www.mongodb.com/try/download/community)
   - [AngularCLI](https://cli.angular.io/)
-  
-**Dependencies**
-
-Navigate the folder where app.js is located in and run `npm install express --save` to install EJS.
 
 ## Usage
 You must create a database in MongoDB in order to allow the data from the application to be stored.
