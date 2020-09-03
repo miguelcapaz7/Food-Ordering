@@ -30,7 +30,6 @@ mongo
 use MenuDB
 ```
 
-To use the application, you must run `app.js` in the **ex_fullCrud_MVC** folder **AND** locate to the myapp folder in angularClient and run `ng serve`. Once the application has finished compiling, navigate to localhost:4200 in your browser to view the app.
-
-
 **Note:** The database must be named **MenuDB**.
+
+To use the application, you must run `app.js` in the **ex_fullCrud_MVC** folder **AND** locate to the myapp folder in angularClient and run `ng serve`. Once the application has finished compiling, navigate to localhost:4200 in your browser to view the app.
